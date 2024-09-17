@@ -1,6 +1,12 @@
-.EBOptions {
-	margin: 2% 0;
-	padding: 2%;
+#EB{
+	height: 100vh;
+	box-sizing: border-box;
+}
+.EBContent{
+	display: flex;
+	flex-direction: column;
+	padding: 2rem;
+	gap: 2rem;
 }
 .EBOptions,
 .EBCols {
@@ -8,6 +14,7 @@
 	justify-content: space-between;
 	align-items: center;
 	text-align: center;
+	text-shadow: 4px 4px 8px #1f1f1f;
 }
 .EBOptions h3 {
 	padding: 0.5rem;
@@ -25,7 +32,7 @@
 	cursor: pointer;
 }
 .EBCols {
-	margin: 3% 0 2% 0;
+	margin: 0;
 }
 .EBActive {
 	animation: EBOptionActive 0.5s ease forwards;
@@ -34,8 +41,6 @@
 	animation: EBOptionOff 0.5s ease forwards;
 }
 .EBOff h3:hover {
-	/* border-top-left-radius: 1rem;
-	border-top-right-radius: 1rem; */
 	background-color: #273f80;
 }
 .EBColActive {
@@ -45,13 +50,17 @@
 	animation: EBColOff 0.5s ease forwards;
 }
 .EBCertifiesList li {
-	display: block;
-	white-space: nowrap;
-	margin: 1.5% 0;
+	padding: 1%;
+	padding-left: 30%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start; 
+	text-shadow: 4px 4px 8px #1f1f1f;
+	width: 100%;
 }
 .EBCertifiesList li:hover {
 	border-radius: 0.5rem;
-	background-color: #415a66;
+	background-color: #4c3a7c;
 }
 @keyframes EBOptionActive {
 	from {

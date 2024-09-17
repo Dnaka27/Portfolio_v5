@@ -63,7 +63,7 @@ const Header = () => {
       </nav>
       <div className='my-info'>
         <div className='my-role'>
-          <h1>Diogo Oike</h1>
+          <h1>&lt;Diogo Oike /&gt;</h1>
           <div className="my-functions">
             <h3>DATA ENGINEER</h3>
             <h3>FULLSTACK DEVELOPER</h3>

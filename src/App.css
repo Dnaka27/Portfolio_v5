@@ -1,10 +1,5 @@
 /* Configurações Globais */
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 body {
   font-size: 1.5rem;
   color: white;
@@ -14,13 +9,8 @@ body {
 
 ul,
 ol {
-  list-style-type: none;
-}
-
-/* Linhas */
-
-.row {
-  --bs-gutter-x: 0;
+  margin-bottom: 0;
+  padding-left: 0;
 }
 
 /* Hover */

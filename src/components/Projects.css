@@ -57,8 +57,8 @@
 .titleProjectDescription,
 .textDescription {
   text-align: justify;
-  margin: 2% 0;
   padding: 2%;
+  text-shadow: 4px 4px 8px #1f1f1f;
 }
 .projectName {
   color: blue;
@@ -100,3 +100,4 @@
 .carousel-control-next {
   width: 5%;
 }
+
