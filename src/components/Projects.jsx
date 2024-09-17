@@ -3,7 +3,10 @@ import './Projects.css'
 const Projects = () => {
   return (
     <section id='projects' class='sectionMain'>
-      <h2 class='titleSection'>PROJECTS</h2>
+      <div className="projects-grid">
+        <h2 className='titleSection'>PROJECTS</h2>
+        <span title='Overview'><i class="fa-solid fa-table-cells-large"></i></span>
+      </div>
       <div id='carousel' class='carousel slide'>
         <div class='carousel-inner'>
           <div class='carousel-item'>
