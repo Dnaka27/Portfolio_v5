@@ -26,27 +26,21 @@ ol {
 /* Hover */
 
 .navbar-brand:hover,
-.nav-link:hover,
-.carousel:hover,
 .skillIcon:hover,
 .contactIcon:hover {
   animation: boxShadowLight 0.3s ease forwards;
 }
 
-.carouselProjectImage:hover {
-  animation: boxShadowDark 0.3s ease forwards;
-}
-
 /* Layout Principal */
 
 .scope {
-  background: radial-gradient(circle, #231b55, #242424);
+  background: radial-gradient(circle, #402474, #1f1f1f);
 }
 
 .sectionMain {
   display: flex;
   flex-direction: column;
-  padding: 2% 4%;
+  padding: 2% 3%;
 }
 
 /* Títulos */
@@ -328,7 +322,7 @@ ol {
 		box-shadow: none;
 	}
 	to {
-		box-shadow: 5px 5px 10px #b6b6b6;
+		box-shadow: 2px 2px 8px #b6b6b6;
 	}
 }
 @keyframes boxShadowDark {
@@ -336,7 +330,7 @@ ol {
 		box-shadow: none;
 	}
 	to {
-		box-shadow: 5px 5px 10px #3b3b3b;
+		box-shadow: 2px 2px 8px #3b3b3b;
 	}
 }
 

@@ -62,10 +62,12 @@ const Header = () => {
         </div>
       </nav>
       <div className='my-info'>
-        <div className='devFunction'>
+        <div className='my-role'>
           <h1>Diogo Oike</h1>
-          <h3>DATA ENGINEER</h3>
-          <h3>FULLSTACK DEVELOPER</h3>
+          <div className="my-functions">
+            <h3>DATA ENGINEER</h3>
+            <h3>FULLSTACK DEVELOPER</h3>
+          </div>
         </div>
         <div className='about-me'>
           <h2>About me</h2>

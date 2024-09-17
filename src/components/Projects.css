@@ -1,9 +1,7 @@
 #projects {
-  padding: 4%;
   height: 100vh;
   box-sizing: border-box;
 }
-
 .carousel {
   display: flex;
   justify-content: center;
