@@ -1,0 +1,151 @@
+header {
+  position: flex;
+  height: 100vh;
+  /* background: url(images/coffeBG-unsplash.jpg) center / cover; */
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.navbar {
+  align-items: center;
+  padding: 2rem;
+}
+.navbar-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.nav-link {
+  border-radius: 0.5rem;
+}
+.navbar-brand:hover,
+.nav-link:hover {
+  background-color: #5f5f5f9a;
+  color: #d0eeff;
+  border-radius: 0.25rem;
+}
+.my-info {
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  align-items: center;
+  height: 100vh;
+  margin: auto;
+}
+.devFunction, .about-me{
+  padding: 1rem;
+  height: 75%;
+  width: 50%;
+}
+.devFunction {
+  text-align: left;
+}
+/* h1 {
+  font-size: 4vw;
+  padding: 1.25rem;
+  left: left;
+  margin: 0;
+  text-shadow: 1rem 0.5rem 1.5rem #5751ff9b;
+  border-bottom: 0.25rem solid #8a87d74d;
+  transition: background-color 0.4s ease;
+  border-radius: 0.5rem;
+}
+h1:hover{
+  background-color: #69696979;
+}
+.headerSub {
+  background-color: #5f5f5f9a;
+  backdrop-filter: blur(7px);
+  height: 50%;
+  margin: 0;
+}
+
+.aboutRow {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5%;
+  gap: 10%;
+  transition: background-color 0.4s ease;
+}
+
+.aboutRow:hover{
+  background-color: #78787849;
+}
+
+.devFunctionCol {
+  border: 0.25rem outset rgb(46, 101, 211);
+  background-color: #0e00a93c;
+  box-shadow: 1rem 0.5rem 1.5rem #5751ff9b;
+  transition: background-color 0.4s ease;
+}
+
+.devFunctionCol:hover {
+  background-color: #0e00a9a0;
+}
+
+.devFunction {
+  color: white;
+  /* text-align: center; */
+  /*
+  font-size: 5rem;
+  font-weight: bold;
+}
+
+.aboutCol{
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+  transition: background-color 0.4s ease;
+  border-radius: 0.25rem;
+}
+.aboutCol:hover{
+  background-color: #69696979;
+} */
+
+.aboutText {
+  text-align: justify;
+  margin: 0;
+}
+
+header .styleJV {
+  background-color: #ff0015;
+}
+
+header .styleJS {
+  background-color: #ddad00;
+}
+
+header .stylePY {
+  background-color: #4800ff;
+}
+
+.styleEnph,
+.styleTech {
+  padding: 0 0.5rem;
+  border-radius: 0.25rem;
+  color: white;
+}
+
+.styleEnph{
+  background-color: #fff;
+  font-weight: bold;
+  color: black;
+}
+
+.carouselProjectImage:hover {
+  animation: boxShadowDark 0.3s ease forwards;
+}
+
+@keyframes boxShadowDark {
+  from {
+    box-shadow: none;
+  }
+
+  to {
+    box-shadow: 5px 5px 10px #2d1d64;
+  }
+}

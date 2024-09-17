@@ -1,0 +1,103 @@
+#projects {
+  padding: 4%;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+.carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.carouselProjects {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  height: 75vh;
+  width: 100%;
+  padding: 0 7.5%;
+  margin: auto;
+}
+.carouselImageCol,
+.carouselDescriptionCol {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+.carouselDescriptionCol {
+  flex-direction: column;
+}
+.carouselProjectImage {
+  width: 80%;
+  height: 80%;
+  border-radius: 0.5rem;
+  box-shadow: 3px 3px 3px #3b3b3b;
+}
+.carouselProjectImage:hover {
+  opacity: 0.5;
+}
+.projectImage1 {
+  background: url(images/Tindog.png) center / cover;
+}
+.projectImage2 {
+  background: url(images/To%20do%20list.png) center / cover;
+}
+.projectImage3 {
+  background: url(images/Coin%20Viewer.png) center / cover;
+}
+.projectImage4 {
+  background: url(images/Backend%20Project.png) center / cover;
+}
+.projectImage5 {
+  background: url(images/Backend%20Project.png) center / cover;
+}
+.titleProjectDescription,
+.textDescription {
+  text-align: justify;
+  margin: 2% 0;
+  padding: 2%;
+}
+.projectName {
+  color: blue;
+}
+.projectName:hover {
+  color: #070f3b;
+}
+.styleTool {
+  padding: 0 0.5rem;
+  background-color: #5a899e;
+}
+.styleTech {
+  padding: 0 0.5rem;
+  border-radius: 5px;
+  color: white;
+}
+.styleHTML {
+  background-color: #ff6600;
+}
+.styleCSS {
+  background-color: #3ca0e7;
+}
+.styleCPP {
+  background-color: #7700ff;
+}
+.styleJV {
+  background-color: #ff0015;
+}
+#projects .styleJS {
+  background-color: #cec028;
+}
+.stylePY {
+  background-color: #3c00ff;
+}
+.styleReact {
+  background-color: #00ddff;
+}
+.carousel-control-prev,
+.carousel-control-next {
+  width: 7.5%;
+}

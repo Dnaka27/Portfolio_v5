@@ -1,0 +1,103 @@
+.EBOptions {
+	margin: 2% 0;
+	padding: 2%;
+}
+.EBOptions,
+.EBCols {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	text-align: center;
+}
+.EBOptions h3 {
+	padding: 0.5rem;
+	font-size: 2rem;
+}
+.EBCertifies h3 {
+	border-bottom: 4px #00c3ff solid;
+}
+.EBAcademic h3 {
+	border-bottom: 4px #6200ff solid;
+}
+.EBCertifies h3:hover,
+.EBAcademic h3:hover,
+.EBColOff:hover {
+	cursor: pointer;
+}
+.EBCols {
+	margin: 3% 0 2% 0;
+}
+.EBActive {
+	animation: EBOptionActive 0.5s ease forwards;
+}
+.EBOff {
+	animation: EBOptionOff 0.5s ease forwards;
+}
+.EBOff h3:hover {
+	/* border-top-left-radius: 1rem;
+	border-top-right-radius: 1rem; */
+	background-color: #273f80;
+}
+.EBColActive {
+	animation: EBColActive 0.5s ease forwards;
+}
+.EBColOff {
+	animation: EBColOff 0.5s ease forwards;
+}
+.EBCertifiesList li {
+	display: block;
+	white-space: nowrap;
+	margin: 1.5% 0;
+}
+.EBCertifiesList li:hover {
+	border-radius: 0.5rem;
+	background-color: #415a66;
+}
+@keyframes EBOptionActive {
+	from {
+		opacity: 0.5;
+		flex: 30;
+		font-size: 2rem;
+	}
+	to {
+		opacity: 1;
+		flex: 60;
+		font-size: 2.5rem;
+	}
+}
+@keyframes EBOptionOff {
+	from {
+		opacity: 1;
+		flex: 60;
+		font-size: 2.5rem;
+	}
+	to {
+		opacity: 0.5;
+		flex: 30;
+		font-size: 1.5rem;
+	}
+}
+@keyframes EBColActive {
+	from {
+		opacity: 0.5;
+		flex: 30;
+		font-size: 1rem;
+	}
+	to {
+		opacity: 1;
+		flex: 60;
+		font-size: 1.5rem;
+	}
+}
+@keyframes EBColOff {
+	from {
+		opacity: 1;
+		flex: 60;
+		font-size: 1.5rem;
+	}
+	to {
+		opacity: 0.5;
+		flex: 30;
+		font-size: 1rem;
+	}
+}
