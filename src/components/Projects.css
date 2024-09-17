@@ -15,7 +15,7 @@
   color: white;
   height: 75vh;
   width: 100%;
-  padding: 0 7.5%;
+  padding: 0 5%;
   margin: auto;
 }
 .carouselImageCol,
@@ -28,6 +28,7 @@
 }
 .carouselDescriptionCol {
   flex-direction: column;
+  padding: 2%;
 }
 .carouselProjectImage {
   width: 80%;
@@ -97,5 +98,5 @@
 }
 .carousel-control-prev,
 .carousel-control-next {
-  width: 7.5%;
+  width: 5%;
 }
