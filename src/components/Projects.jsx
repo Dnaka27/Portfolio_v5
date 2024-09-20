@@ -9,22 +9,17 @@ const Projects = () => {
           <div className='carousel-item active'>
             <div className='carousel-schema-primary'>
               <div className='carousel-image'>
-                <a href=''></a>
+                <a className='carousel-image-project'></a>
               </div>
               <div className='carousel-desc'>
-                
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
-                fugiat delectus atque? Numquam perspiciatis voluptatum
-                recusandae nesciunt voluptates eaque, blanditiis ex, error
-                magnam eligendi, quas cum corrupti officia nostrum nam!
+                <h4>Project Name</h4>
+                <p>text</p>
               </div>
             </div>
             <div className='carousel-schema-primary'>
               <div className='carousel-desc'>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
-                fugiat delectus atque? Numquam perspiciatis voluptatum
-                recusandae nesciunt voluptates eaque, blanditiis ex, error
-                magnam eligendi, quas cum corrupti officia nostrum nam!
+                <h4>Project Name</h4>
+                <p>text</p>
               </div>
               <div className='carousel-image'>
                 <a href=''></a>

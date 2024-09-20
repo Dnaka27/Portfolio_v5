@@ -30,14 +30,22 @@
   width: 50%;
   height: 100%;
   padding: 2% 4%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.carousel-image{
+  height: 100%;
+  width: 1005;
 }
 
-.carousel-image {
-
+.carousel-image-project {
+  background-image: center / cover url('images/Coin\ Viewer.png');
+  background-color: #1f1f1f;
 }
 
 .carousel-desc {
-
+  text-align: center;
 }
 
 .projectImage1 {
