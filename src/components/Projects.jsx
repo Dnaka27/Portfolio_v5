@@ -3,13 +3,36 @@ import './Projects.css'
 const Projects = () => {
   return (
     <section id='projects' class='sectionMain'>
-      <div className="projects-grid">
-        <h2 className='titleSection'>PROJECTS</h2>
-        <span title='Overview'><i class="fa-solid fa-table-cells-large"></i></span>
-      </div>
+      <h2 className='titleSection'>PROJECTS</h2>
       <div id='carousel' class='carousel slide'>
         <div class='carousel-inner'>
-          <div class='carousel-item'>
+          <div className='carousel-item active'>
+            <div className='carousel-schema-primary'>
+              <div className='carousel-image'>
+                <a href=''></a>
+              </div>
+              <div className='carousel-desc'>
+                
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
+                fugiat delectus atque? Numquam perspiciatis voluptatum
+                recusandae nesciunt voluptates eaque, blanditiis ex, error
+                magnam eligendi, quas cum corrupti officia nostrum nam!
+              </div>
+            </div>
+            <div className='carousel-schema-primary'>
+              <div className='carousel-desc'>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
+                fugiat delectus atque? Numquam perspiciatis voluptatum
+                recusandae nesciunt voluptates eaque, blanditiis ex, error
+                magnam eligendi, quas cum corrupti officia nostrum nam!
+              </div>
+              <div className='carousel-image'>
+                <a href=''></a>
+              </div>
+            </div>
+          </div>
+          <div className='carousel-item'></div>
+          {/* <div class='carousel-item'>
             <div class='carouselProjects'>
               <div class='carouselImageCol'>
                 <a
@@ -73,7 +96,6 @@ const Projects = () => {
           <div class='carousel-item active'>
             <div class='carouselProjects'>
               <div class='carouselImageCol'>
-                {/* Adicionar domínio */}
                 <a
                   class='carouselProjectImage projectImage3'
                   href='https://coinviewer-diogooike.streamlit.app/'
@@ -133,8 +155,8 @@ const Projects = () => {
               </div>
             </div>
           </div>
-          <div class='carousel-item'>
-            <div class='carouselProjects'>
+          <div class='carousel-item'> */}
+          {/* <div class='carouselProjects'>
               <div class='carouselImageCol'>
                 <a
                   class='carouselProjectImage projectImage5'
@@ -161,8 +183,7 @@ const Projects = () => {
                   the <span class='styleTool'>SHEETY</span> tool.
                 </p>
               </div>
-            </div>
-          </div>
+            </div> */}
         </div>
         <button
           class='carousel-control-prev'
