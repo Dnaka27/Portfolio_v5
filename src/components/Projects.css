@@ -2,15 +2,6 @@
   height: 100vh;
   box-sizing: border-box;
 }
-.projects-grid {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-.projects-grid span {
-  padding: 1%;
-  cursor: pointer;
-}
 .carousel {
   display: flex;
   justify-content: center;
@@ -109,4 +100,6 @@
 .carousel-control-next {
   width: 5%;
 }
-
+.carousel-indicators {
+  margin-bottom: 0;
+}
