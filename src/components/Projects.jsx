@@ -5,16 +5,30 @@ import './Projects.css'
 const projectData = [
   {
     name: 'Coin Viewer',
-    description: `A currency quotation application called 
-    <a class='projectName' href='https://github.com/Dnaka27/Coin_Viewer' target='_blank'>COIN VIEWER</a>. 
-    It is primarily built with <span class='styleTech stylePY'>PYTHON</span>, using 
-    <span class='styleTool'>STREAMLIT</span> for the interface, 
-    <span class='styleTool'>PANDAS</span> and <span class='styleTool'>NUMPY</span> for data handling, 
-    <span class='styleTool'>REQUESTS</span> for the API, and 
-    <span class='styleTool'>PLOTLY</span> for the charts.`,
+    description: 
+      `A currency quotation application called 
+      <a class='projectName' href='https://github.com/Dnaka27/Coin_Viewer' target='_blank'>COIN VIEWER</a>. 
+      It is primarily built with <span class='styleTech stylePY'>PYTHON</span>, using 
+      <span class='styleTool'>STREAMLIT</span> for the interface, 
+      <span class='styleTool'>PANDAS</span> and <span class='styleTool'>NUMPY</span> for data handling, 
+      <span class='styleTool'>REQUESTS</span> for the API, and 
+      <span class='styleTool'>PLOTLY</span> for the charts.`,
     imageUrl: 'https://coinviewer-diogooike.streamlit.app/',
+    githubRepository: 'https://github.com/Dnaka27/Coin_Viewer',
   },
-  {},
+  {
+    name: 'To Do List',
+    description: 
+      `This is an organizational project, a simple to-do list for
+      everyday tasks. It's called 
+      <a class='projectName' href='https://github.com/Dnaka27/ToDoList_basic/' target='_blank'> TO DO LIST </a>.
+      In this project, I used
+      <span class='styleTech styleJS'>JAVASCRIPT</span> along with
+      <span class='styleTech styleReact'>REACT</span> and finally
+      styled it with <span class='styleTech styleCSS'>CSS</span>.`,
+    imageUrl: 'https://dnaka27.github.io/ToDoList_basic/',
+    githubRepository: 'https://github.com/Dnaka27/ToDoList_basic/',
+  },
 ]
 
 const Projects = () => {
@@ -37,7 +51,7 @@ const Projects = () => {
             <div className='carousel-schema-primary'>
               <div className='carousel-image-primary'>
                 <a
-                  href={projectData[0].imageUrl} // Acessa o URL corretamente
+                  href={projectData[0].imageUrl} // Acessa o URL do primeiro projeto
                   className='carousel-image-project image-project1'
                   target='_blank'
                   rel='noopener noreferrer'
@@ -51,7 +65,12 @@ const Projects = () => {
                   dangerouslySetInnerHTML={{ __html: description }}
                 />
                 <div className='carousel-desc-primary-links'>
-                  <a href=''>
+                  <a
+                    href={projectData[0].githubRepository} // Link para o repositório GitHub do primeiro projeto
+                    target='_blank'
+                    rel='noopener noreferrer'
+                    aria-label='GitHub Repository'
+                  >
                     <i className='fa-brands fa-github carousel-desc-links-icon'></i>
                   </a>
                 </div>
@@ -59,24 +78,31 @@ const Projects = () => {
             </div>
             <div className='carousel-schema-secondary'>
               <div className='carousel-desc-secondary'>
-                <h4 className='carousel-desc-title'>{projectData[0].name}</h4>{' '}
+                <h4 className='carousel-desc-title'>{projectData[1].name}</h4>{' '}
                 <p
                   className='carousel-desc-text'
-                  dangerouslySetInnerHTML={{ __html: description }}
+                  dangerouslySetInnerHTML={{
+                    __html: projectData[1].description,
+                  }}
                 />
                 <div className='carousel-desc-secondary-links'>
-                  <a href=''>
+                  <a
+                    href={projectData[1].githubRepository} // Link para o repositório GitHub do segundo projeto
+                    target='_blank'
+                    rel='noopener noreferrer'
+                    aria-label='GitHub Repository'
+                  >
                     <i className='fa-brands fa-github carousel-desc-links-icon'></i>
                   </a>
                 </div>
               </div>
               <div className='carousel-image-secondary'>
                 <a
-                  href={projectData[0].imageUrl} // Acessa o URL corretamente
-                  className='carousel-image-project image-project1'
+                  href={projectData[1].imageUrl} // Acessa o URL do segundo projeto
+                  className='carousel-image-project image-project2'
                   target='_blank'
                   rel='noopener noreferrer'
-                  aria-label='Coin Viewer Project'
+                  aria-label='To Do List Project'
                 ></a>
               </div>
             </div>
