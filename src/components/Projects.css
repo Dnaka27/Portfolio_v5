@@ -22,6 +22,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 1rem;
   height: 100%; 
 }
 
@@ -39,16 +40,63 @@
 }
 
 .carousel-schema-primary:hover {
-  background-color: #6000ff50;
+  background-color: #6969693d;
   height: 50%;
   width: 85%;
+  box-shadow: 4px 4px 8px #1f1f1f;
 }
 
-.carousel-image,
-.carousel-desc {
-  width: 50%;
+.carousel-image-primary {
+  width: 30%;
   height: 100%;
-  padding: 2% 10%;
+  padding: 2% 4%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.carousel-desc-primary {
+  width: 70%;
+  height: 100%;
+  padding: 2% 4%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.carousel-schema-secondary {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 45%;
+  width: 70%;
+  padding: 0;
+  transition: background-color 0.4s ease, width 0.5s ease, height 0.5s ease;
+  pointer-events: auto;
+  border-radius: 0.5rem;
+}
+
+.carousel-schema-secondary:hover {
+  background-color: #6969693d;
+  height: 50%;
+  width: 85%;
+  box-shadow: 4px 4px 8px #1f1f1f;
+}
+
+.carousel-image-secondary {
+  width: 30%;
+  height: 100%;
+  padding: 2% 4%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.carousel-desc-secondary {
+  width: 70%;
+  height: 100%;
+  padding: 2% 4%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -57,40 +105,42 @@
 .carousel-image-project {
   height: 100%;
   border-radius: 0.25rem;
+  transition: box-shadow 0.3s ease-in-out; /* Adicionando transição suave */
+}
+
+.carousel-image-project:hover {
   box-shadow: 5px 5px 10px #1f1f1f;
+  opacity: 0.5; /* Efeito de sombra ao passar o mouse */
 }
 
 .image-project1{
   background: url(images/Coin%20Viewer.png) center / cover;
 }
-
-.carousel-desc {
-  text-align: center;
-}
-
-.projectImage1 {
-  background: url(images/Tindog.png) center / cover;
-}
-.projectImage2 {
+.image-project2 {
   background: url(images/To%20do%20list.png) center / cover;
 }
-.projectImage3 {
-  background: url(images/Coin%20Viewer.png) center / cover;
-}
-.projectImage4 {
-  background: url(images/Backend%20Project.png) center / cover;
-}
-.projectImage5 {
-  background: url(images/Backend%20Project.png) center / cover;
-}
-.titleProjectDescription,
-.textDescription {
-  text-align: justify;
+
+.carousel-desc-title {
+  text-align: center;
   padding: 2%;
-  text-shadow: 4px 4px 8px #1f1f1f;
+}
+.carousel-desc-text{
+  text-align: justify;
+}
+.carousel-desc-primary-links {
+  text-align: right;
+}
+.carousel-desc-secondary-links {
+  text-align: left;
+}
+.carousel-desc-links-icon{
+  padding: 1%;
+  color: white;
+  background-color: #0d1017;
+  border-radius: 0.25rem;
 }
 .projectName {
-  color: blue;
+  color: rgb(0, 123, 255);
 }
 .projectName:hover {
   color: #070f3b;
@@ -128,10 +178,4 @@
 .carousel-control-prev,
 .carousel-control-next {
   width: 5%;
-}
-
-.project-tech{
-  padding: 5%;
-  background-color: #3c00ff;
-  border-radius: 0.25rem;
 }

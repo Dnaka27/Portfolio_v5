@@ -15,10 +15,18 @@ ol {
 
 /* Hover */
 
+.carousel-desc-links-icon,
+.navbar-brand,
+.skillIcon,
+.contactIcon {
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.carousel-desc-links-icon:hover,
 .navbar-brand:hover,
 .skillIcon:hover,
 .contactIcon:hover {
-  animation: boxShadowLight 0.3s ease forwards;
+  box-shadow: 2px 2px 8px #b6b6b6;
 }
 
 /* Layout Principal */
@@ -38,9 +46,9 @@ ol {
 .titleSection {
   display: inline;
   text-align: left;
-  font-size: 3rem;
+  font-size: 2.75rem;
   margin: 0;
-  padding: 2%;
+  padding: 1.5%;
   color: white;
 }
 
@@ -307,14 +315,6 @@ ol {
 
 /* Animations */
 
-@keyframes boxShadowLight {
-	from {
-		box-shadow: none;
-	}
-	to {
-		box-shadow: 2px 2px 8px #b6b6b6;
-	}
-}
 @keyframes boxShadowDark {
 	from {
 		box-shadow: none;
