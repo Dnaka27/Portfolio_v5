@@ -3,26 +3,45 @@
   box-sizing: border-box;
 }
 .carousel {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
   height: 100%;
 }
 .carousel-inner {
-  height: 100%;
-}
-
-.carousel-item {
-  height: 100%;
-}
-
-.carousel-schema-primary{
   display: flex;
   flex-direction: row;
   align-items: center;
+  height: 100%;   
+  pointer-events: none;
+}
+
+.carousel-item.active {
+  display: flex;
+}
+
+.carousel-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%; 
+}
+
+.carousel-schema-primary {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 45%;
+  width: 70%;
+  padding: 0;
+  transition: background-color 0.4s ease, width 0.5s ease, height 0.5s ease;
+  pointer-events: auto;
+  border-radius: 0.5rem;
+}
+
+.carousel-schema-primary:hover {
+  background-color: #6000ff50;
   height: 50%;
-  padding: 0 5%;
+  width: 85%;
 }
 
 .carousel-image,
@@ -34,12 +53,14 @@
   flex-direction: column;
   justify-content: center;
 }
-.carousel-image{
-
-}
 
 .carousel-image-project {
   height: 100%;
+  border-radius: 0.25rem;
+  box-shadow: 5px 5px 10px #1f1f1f;
+}
+
+.image-project1{
   background: url(images/Coin%20Viewer.png) center / cover;
 }
 
@@ -109,3 +130,8 @@
   width: 5%;
 }
 
+.project-tech{
+  padding: 5%;
+  background-color: #3c00ff;
+  border-radius: 0.25rem;
+}
