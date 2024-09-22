@@ -62,6 +62,9 @@
 	border-radius: 0.5rem;
 	background-color: #4c3a7c;
 }
+.EBAcademicCol {
+	text-align: justify;
+}
 @keyframes EBOptionActive {
 	from {
 		opacity: 0.5;

@@ -38,9 +38,6 @@ const Footer = () => {
           </a>
         </div>
       </div>
-      <div className='arrow-up'>
-        <i className='fa-solid fa-arrow-up' onClick={() => scrollToSection('menu')}></i>
-      </div>
     </footer>
   )
 }

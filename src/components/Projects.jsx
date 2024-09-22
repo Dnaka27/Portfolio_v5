@@ -1,187 +1,137 @@
-import './Projects.css'
+import './Projects.css';
+
+// Dados dos projetos
+const projectData = [
+  {
+    name: 'Coin Viewer',
+    description: (
+      <>
+        A currency quotation application called{' '}
+        <a
+          className='projectName'
+          href='https://github.com/Dnaka27/Coin_Viewer'
+          target='_blank'
+          rel='noopener noreferrer'
+        >
+          COIN VIEWER
+        </a>. It is primarily built with{' '}
+        <span className='styleTech stylePY'>PYTHON</span>, using{' '}
+        <span className='styleTool'>STREAMLIT</span> for the interface,{' '}
+        <span className='styleTool'>PANDAS</span> and{' '}
+        <span className='styleTool'>NUMPY</span> for data handling,{' '}
+        <span className='styleTool'>REQUESTS</span> for the API, and{' '}
+        <span className='styleTool'>PLOTLY</span> for the charts.
+      </>
+    ),
+    imageUrl: 'https://coinviewer-diogooike.streamlit.app/',
+    githubRepository: 'https://github.com/Dnaka27/Coin_Viewer',
+  },
+  {
+    name: 'To Do List',
+    description: (
+      <>
+        This is an organizational project, a simple to-do list for everyday
+        tasks. It's called{' '}
+        <a
+          className='projectName'
+          href='https://github.com/Dnaka27/ToDoList_basic/'
+          target='_blank'
+          rel='noopener noreferrer'
+        >
+          TO DO LIST
+        </a>. In this project, I used{' '}
+        <span className='styleTech styleJS'>JAVASCRIPT</span> along with{' '}
+        <span className='styleTech styleReact'>REACT</span> and finally styled it
+        with <span className='styleTech styleCSS'>CSS</span>.
+      </>
+    ),
+    imageUrl: 'https://dnaka27.github.io/ToDoList_basic/',
+    githubRepository: 'https://github.com/Dnaka27/ToDoList_basic/',
+  },
+];
 
 const Projects = () => {
   return (
-    <section id='projects' class='sectionMain'>
+    <section id='projects' className='sectionMain'>
       <h2 className='titleSection'>PROJECTS</h2>
-      <div id='carousel' class='carousel slide'>
-        <div class='carousel-inner'>
-          <div class='carousel-item'>
-            <div class='carouselProjects'>
-              <div class='carouselImageCol'>
+      <div id='carousel' className='carousel slide'>
+        <div className='carousel-inner'>
+          <div className='carousel-item active'>
+            <div className='carousel-schema-primary'>
+              <div className='carousel-image-primary'>
                 <a
-                  class='carouselProjectImage projectImage1'
-                  href='https://dnaka27.github.io/Tindog_Udemy_Web/'
+                  href={projectData[0].imageUrl}
+                  className='carousel-image-project image-project1'
                   target='_blank'
-                  alt='Project image'
+                  rel='noopener noreferrer'
+                  aria-label='Coin Viewer Project'
                 ></a>
               </div>
-              <div class='carouselDescriptionCol'>
-                <h3 class='titleProjectDescription'>TinDoG</h3>
-                <p class='textDescription'>
-                  This project was completed as part of the Fullstack
-                  Programming course on Udemy. It’s a dating app for dogs called{' '}
+              <div className='carousel-desc-primary'>
+                <h4 className='carousel-desc-title'>{projectData[0].name}</h4>
+                <p className='carousel-desc-text'>{projectData[0].description}</p>
+                <div className='carousel-desc-primary-links'>
                   <a
-                    class='projectName'
-                    href='https://github.com/Dnaka27/Tindog_Udemy_Web'
+                    href={projectData[0].githubRepository}
                     target='_blank'
+                    rel='noopener noreferrer'
+                    aria-label='GitHub Repository'
                   >
-                    TINDOG
+                    <i className='fa-brands fa-github carousel-desc-links-icon'></i>
                   </a>
-                  . I used <span class='styleTech styleHTML'>HTML</span> and{' '}
-                  <span class='styleTech styleCSS'>CSS</span> to create a static
-                  page layout, also utilizing{' '}
-                  <span class='styleTool'>BOOTSTRAP</span> for responsiveness
-                  and components.
-                </p>
+                </div>
               </div>
             </div>
-          </div>
-          <div class='carousel-item'>
-            <div class='carouselProjects'>
-              <div class='carouselImageCol'>
+            <div className='carousel-schema-primary'>
+              <div className='carousel-image-primary'>
                 <a
-                  class='carouselProjectImage projectImage2'
-                  href='https://dnaka27.github.io/ToDoList_basic/'
+                  href={projectData[1].imageUrl}
+                  className='carousel-image-project image-project2'
                   target='_blank'
-                  alt='Project image'
+                  rel='noopener noreferrer'
+                  aria-label='To Do List Project'
                 ></a>
               </div>
-              <div class='carouselDescriptionCol'>
-                <h3 class='titleProjectDescription'>To do list</h3>
-                <p class='textDescription'>
-                  This is an organizational project, a simple to-do list for
-                  everyday tasks, but with filters and a search bar. It's called{' '}
+              <div className='carousel-desc-primary'>
+                <h4 className='carousel-desc-title'>{projectData[1].name}</h4>
+                <p className='carousel-desc-text'>{projectData[1].description}</p>
+                <div className='carousel-desc-primary-links'>
                   <a
-                    class='projectName'
-                    href='https://github.com/Dnaka27/ToDoList_basic/'
+                    href={projectData[1].githubRepository}
                     target='_blank'
+                    rel='noopener noreferrer'
+                    aria-label='GitHub Repository'
                   >
-                    TO DO LIST
+                    <i className='fa-brands fa-github carousel-desc-links-icon'></i>
                   </a>
-                  . In this project, I used{' '}
-                  <span class='styleTech styleJS'>JAVASCRIPT</span> along with{' '}
-                  <span class='styleTech styleReact'>REACT</span> and finally
-                  styled it with <span class='styleTech styleCSS'>CSS</span>.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class='carousel-item active'>
-            <div class='carouselProjects'>
-              <div class='carouselImageCol'>
-                {/* Adicionar domínio */}
-                <a
-                  class='carouselProjectImage projectImage3'
-                  href='https://coinviewer-diogooike.streamlit.app/'
-                  target='_blank'
-                  alt='Project image'
-                ></a>
-              </div>
-              <div class='carouselDescriptionCol'>
-                <h3 class='titleProjectDescription'>Coin Viewer</h3>
-                <p class='textDescription'>
-                  This is a personal project that is still in progress, a
-                  currency quotation application called{' '}
-                  <a
-                    class='projectName'
-                    href='https://github.com/Dnaka27/Coin_Viewer'
-                    target='_blank'
-                  >
-                    COIN VIEWER
-                  </a>
-                  . It is primarily built with{' '}
-                  <span class='styleTech stylePY'>PYTHON</span>, using{' '}
-                  <span class='styleTool'>STREAMLIT</span> for the interface,{' '}
-                  <span class='styleTool'>PANDAS</span> and{' '}
-                  <span class='styleTool'>NUMPY</span> for data handling,{' '}
-                  <span class='styleTool'>REQUESTS</span> for the API, and{' '}
-                  <span class='styleTool'>PLOTLY</span> for the charts.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class='carousel-item'>
-            <div class='carouselProjects'>
-              <div class='carouselImageCol'>
-                <a
-                  class='carouselProjectImage projectImage4'
-                  href='https://github.com/Dnaka27/Basic_system_JavaSpring'
-                  target='_blank'
-                  alt='Project image'
-                ></a>
-              </div>
-              <div class='carouselDescriptionCol'>
-                <h3 class='titleProjectDescription'>Java API</h3>
-                <p class='textDescription'>
-                  This is a basic project made with{' '}
-                  <span class='styleTech styleJV'>Java</span>, called{' '}
-                  <a
-                    href='https://github.com/Dnaka27/Basic_system_JavaSpring'
-                    class='projectName'
-                  >
-                    JAVA API
-                  </a>
-                  . It’s a simple system integrated with an H2 database. I used
-                  the <span class='styleTool'>SPRING</span> framework and{' '}
-                  <span class='styleTool'>MAVEN</span> to manage its
-                  dependencies.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class='carousel-item'>
-            <div class='carouselProjects'>
-              <div class='carouselImageCol'>
-                <a
-                  class='carouselProjectImage projectImage5'
-                  href='https://github.com/Dnaka27/Nutritionix_API-Google_sheets'
-                  target='_blank'
-                  alt='Project image'
-                ></a>
-              </div>
-              <div class='carouselDescriptionCol'>
-                <h3 class='titleProjectDescription'>Nutritionix project</h3>
-                <p class='textDescription'>
-                  A project completed as part of the Python programming course
-                  on Udemy, called{' '}
-                  <a
-                    class='projectName'
-                    href='https://github.com/Dnaka27/Nutritionix_API-Google_sheets'
-                    target='_blank'
-                  >
-                    NUTRITIONIX
-                  </a>
-                  . It involves integrating a{' '}
-                  <span class='styleTool'>SHEETS</span> spreadsheet with an API
-                  call using <span class='styleTech stylePY'>PYTHON</span> and
-                  the <span class='styleTool'>SHEETY</span> tool.
-                </p>
+                </div>
               </div>
             </div>
           </div>
         </div>
         <button
-          class='carousel-control-prev'
+          className='carousel-control-prev'
           type='button'
           data-bs-target='#carousel'
           data-bs-slide='prev'
+          aria-label='Previous slide'
         >
-          <span class='carousel-control-prev-icon' aria-hidden='true'></span>
-          <span class='visually-hidden'>Previous</span>
+          <span className='carousel-control-prev-icon' aria-hidden='true'></span>
+          <span className='visually-hidden'>Previous</span>
         </button>
         <button
-          class='carousel-control-next'
+          className='carousel-control-next'
           type='button'
           data-bs-target='#carousel'
           data-bs-slide='next'
+          aria-label='Next slide'
         >
-          <span class='carousel-control-next-icon' aria-hidden='true'></span>
-          <span class='visually-hidden'>Next</span>
+          <span className='carousel-control-next-icon' aria-hidden='true'></span>
+          <span className='visually-hidden'>Next</span>
         </button>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Projects
+export default Projects;
