@@ -82,8 +82,8 @@ const Projects = () => {
                 </div>
               </div>
             </div>
-            <div className='carousel-schema-secondary'>
-              <div className='carousel-image-secondary'>
+            <div className='carousel-schema-primary'>
+              <div className='carousel-image-primary'>
                 <a
                   href={projectData[1].imageUrl}
                   className='carousel-image-project image-project2'
@@ -92,10 +92,10 @@ const Projects = () => {
                   aria-label='To Do List Project'
                 ></a>
               </div>
-              <div className='carousel-desc-secondary'>
+              <div className='carousel-desc-primary'>
                 <h4 className='carousel-desc-title'>{projectData[1].name}</h4>
                 <p className='carousel-desc-text'>{projectData[1].description}</p>
-                <div className='carousel-desc-secondary-links'>
+                <div className='carousel-desc-primary-links'>
                   <a
                     href={projectData[1].githubRepository}
                     target='_blank'

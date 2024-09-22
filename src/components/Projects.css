@@ -64,44 +64,6 @@
   justify-content: center;
 }
 
-.carousel-schema-secondary {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  height: 45%;
-  width: 70%;
-  padding: 0;
-  transition: background-color 0.4s ease, width 0.5s ease, height 0.5s ease;
-  pointer-events: auto;
-  border-radius: 0.5rem;
-}
-
-.carousel-schema-secondary:hover {
-  background-color: #6969693d;
-  height: 50%;
-  width: 85%;
-  box-shadow: 4px 4px 8px #1f1f1f;
-}
-
-.carousel-image-secondary {
-  width: 30%;
-  height: 100%;
-  padding: 2% 4%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.carousel-desc-secondary {
-  width: 70%;
-  height: 100%;
-  padding: 2% 4%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
 .carousel-image-project {
   height: 100%;
   border-radius: 0.25rem;
@@ -129,9 +91,6 @@
 }
 .carousel-desc-primary-links {
   text-align: right;
-}
-.carousel-desc-secondary-links {
-  text-align: left;
 }
 .carousel-desc-links-icon{
   padding: 1%;
@@ -169,7 +128,7 @@
 .styleJV {
   background-color: #ff0015;
 }
-#projects .styleJS {
+.styleJS {
   background-color: #cec028;
 }
 .stylePY {
