@@ -83,26 +83,9 @@ const Header = () => {
           </p>
         </div>
       </div>
-      {/* <h1>Diogo Oike</h1>
-      <div className='headerSub'>
-        <div className='row aboutRow'>
-          <div className='col devFunctionCol'>
-            <h2 className='devFunction'>FULLSTACK DEVELOPER</h2>
-          </div>
-          <div className='col aboutCol'>
-            <p className='aboutText'>
-              Nice to meet you, I'm Diogo! I'm a university student pursuing a
-              degree in software engineering. I apply my knowledge in{' '}
-              <span className='styleTech stylePY'>Python</span>,{' '}
-              <span className='styleTech styleJV'>Java</span>, and{' '}
-              <span className='styleTech styleJS'>JavaScript</span> in the
-              field. I enjoy creating smart solutions while exploring the world
-              of technology. I'm a committed and creative person, always looking
-              to <span className='styleEnph'>learn</span> something new.
-            </p>
-          </div>
-        </div>
-      </div> */}
+      <button className='fixed-button' onClick={() => scrollToSection('menu')} title='Back to menu'>
+        <i className='fa-solid fa-arrow-up'></i>
+      </button>
     </header>
   )
 }

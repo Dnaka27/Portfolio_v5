@@ -20,8 +20,7 @@ header {
 }
 .navbar-brand:hover,
 .nav-link:hover {
-  background-color: #5f5f5f9a;
-  border-radius: 0.25rem;
+  background-color: #77777777;
 }
 .my-info {
   padding: 0% 3%;
@@ -104,4 +103,25 @@ header .stylePY {
   background-color: #fff;
   font-weight: bold;
   color: black;
+}
+
+/* Botão fixo */
+
+.fixed-button {
+  position: fixed; /* Mantém o botão fixo na tela */
+  bottom: 20px; /* Distância do fundo da tela */
+  right: 20px; /* Distância da direita da tela */
+  padding: 10px 20px; /* Espaçamento interno do botão */
+  background-color: #6600ff; /* Cor de fundo */
+  color: white; /* Cor do texto */
+  border: none; /* Sem borda */
+  border-radius: 5px; /* Bordas arredondadas */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Sombra */
+  cursor: pointer; /* Muda o cursor ao passar o mouse */
+  z-index: 1000; /* Garante que o botão esteja acima de outros elementos */
+  transition: background-color 0.3s; /* Transição suave para a cor de fundo */
+}
+
+.fixed-button:hover {
+  background-color: #7d00b3; /* Cor de fundo ao passar o mouse */
 }
