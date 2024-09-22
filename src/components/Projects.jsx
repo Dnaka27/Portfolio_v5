@@ -107,7 +107,9 @@ const Projects = () => {
               </div>
             </div>
           </div>
-          <div className='carousel-item'></div>
+          <div className='carousel-item'>
+            
+          </div>
         </div>
         <button
           className='carousel-control-prev'
