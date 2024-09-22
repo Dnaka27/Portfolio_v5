@@ -139,6 +139,9 @@
   background-color: #0d1017;
   border-radius: 0.25rem;
 }
+.carousel-desc-links-icon:hover{
+  color: #7125ff;
+}
 .projectName {
   color: rgb(0, 123, 255);
 }
