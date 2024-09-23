@@ -1,12 +1,22 @@
-import React, { useState } from 'react'
-import './EdBackground.css'
+import React, { useState } from 'react';
+import './EdBackground.css';
 
 const Skills = () => {
-  const [activeSection, setActiveSection] = useState('EBCertifies')
+  const [activeSection, setActiveSection] = useState('EBCertifies');
 
-  const handleMouseEnter = (mouseIn) => {
-    setActiveSection(mouseIn)
-  }
+  const handleMouseEnter = (section) => {
+    setActiveSection(section);
+  };
+
+  // Array de cursos/certificados
+  const certificates = [
+    'DIO: Amazon Web Services',
+    'DIO: Potência Tech Data Science',
+    'Coursera: Google Data Analytics',
+    'Udemy: Python Bootcamp',
+    'Udemy: Fullstack Web Bootcamp',
+    'Cubos Academy: Data Analysis',
+  ];
 
   return (
     <section id='EB' className='sectionMain'>
@@ -19,7 +29,7 @@ const Skills = () => {
             }`}
             onMouseEnter={() => handleMouseEnter('EBCertifies')}
           >
-            <h3>Courses/certificates</h3>
+            <h3>Courses/Certificates</h3>
           </div>
           <div
             className={`EBAcademic ${
@@ -39,12 +49,9 @@ const Skills = () => {
           >
             <div className='EBCertifiesText'>
               <ul className='EBCertifiesList'>
-                <li>DIO: Amazon web services</li>
-                <li>DIO: Potência Tech Data Science</li>
-                <li>Coursera: Google Data Analytics</li>
-                <li>Udemy: Python Bootcamp</li>
-                <li>Udemy: Fullstack web Bootcamp</li>
-                <li>Cubos Academy: Data Analysis</li>
+                {certificates.map((certificate, index) => (
+                  <li key={index}>{certificate}</li>
+                ))}
               </ul>
             </div>
           </div>
@@ -57,19 +64,13 @@ const Skills = () => {
             <p className='textDescription'>
               Information Technology Management (GTI) student at IFSC in
               Florianópolis. In the programming part, I carried out programming
-              logic using the language{' '}
-              <span className='styleTech styleCPP'>C++</span> and object
-              orientation using <span className='styleTech styleJV'>Java</span>.
-              Furthermore, I learned about network and management basics. This
-              in disciplines such as: Network infrastructure, systems
-              development processes, people management and economic and
-              financial management.
+              logic using <span className='styleTech styleCPP'>C++</span> and object orientation using <span className='styleTech styleJV'>Java</span>. Furthermore, I learned about network and management basics in disciplines such as: Network infrastructure, systems development processes, people management, and economic and financial management.
             </p>
           </div>
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Skills
+export default Skills;
