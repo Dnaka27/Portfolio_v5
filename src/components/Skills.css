@@ -1,7 +1,6 @@
-/* Skills */
-
 .skillTypes {
-  margin: 3% 0;
+  --bs-gutter-x: 0;
+  padding: 1%;
   text-align: center;
 }
 .softSkills,
