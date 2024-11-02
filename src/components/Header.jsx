@@ -79,7 +79,7 @@ const Header = () => {
             <span className='styleTech styleJS'>JavaScript</span>. I enjoy
             creating smart solutions while exploring the world of technology. I
             am a committed and creative person, always looking to{' '}
-            <span className='styleEnph'>learn </span>
+            <span className='styleEnph'>learn</span>{' '}
             something new.
           </p>
         </div>
