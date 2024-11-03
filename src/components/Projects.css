@@ -2,104 +2,58 @@
   height: 100vh;
   box-sizing: border-box;
 }
-.carousel {
-  height: 100%;
-}
-.carousel-inner {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  height: 100%;   
-}
-
-.carousel-item.active {
-  display: flex;
-}
-
-.carousel-item {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 100%; 
-}
-
-.project-pair {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 2.5rem;
-}
-
-.schema-primary {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  height: 80%;
-  width: 80%;
-  padding: 0;
-  border-radius: 0.5rem;
-}
-
-.schema-primary:hover {
-  background-color: #6969693d;
-  box-shadow: 4px 4px 8px #1f1f1f;
-}
-
-.image-primary {
-  width: 30%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.carousel-desc-primary {
-  width: 70%;
-  height: 100%;
-  padding: 2% 4%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.image-project {
-  height: 100%;
-  border-radius: 0.25rem;
-  transition: box-shadow 0.3s ease-in-out; /* Adicionando transição suave */
-}
-
-.carousel-image-project:hover {
-  box-shadow: 5px 5px 10px #1f1f1f;
-  opacity: 0.5; /* Efeito de sombra ao passar o mouse */
-}
-
-.image-project1{
-  background: url(images/Coin%20Viewer.png) center / cover;
-}
-.image-project2 {
-  background: url(images/To%20do%20list.png) center / cover;
-}
-
-.carousel-desc-title {
+.projects-section {
+  padding: 3rem 1rem;
   text-align: center;
-  padding: 2%;
 }
-.carousel-desc-text{
-  text-align: justify;
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
 }
-.carousel-desc-primary-links {
-  text-align: right;
+
+.project-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s;
 }
-.carousel-desc-links-icon{
-  padding: 1%;
-  color: white;
-  background-color: #0d1017;
-  border-radius: 0.25rem;
+
+.project-card:hover {
+  transform: translateY(-5px);
 }
-.carousel-desc-links-icon:hover{
-  color: #7125ff;
+
+.project-image {
+  height: 150px;
+  background-size: cover;
+  background-position: center;
 }
+
+.project-title {
+  font-size: 1.2rem;
+  margin: 1rem 0 0.5rem;
+}
+
+.project-description {
+  font-size: 0.9rem;
+  color: #666;
+  padding: 0 1rem 1rem;
+}
+
+.project-link {
+  display: inline-block;
+  margin-bottom: 1rem;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.project-link:hover {
+  color: #0056b3;
+}
+
 .projectName {
   color: rgb(0, 123, 255);
 }
