@@ -112,17 +112,17 @@ header .stylePY {
 /* Botão fixo */
 
 .fixed-button {
-  position: fixed; /* Mantém o botão fixo na tela */
-  bottom: 20px; /* Distância do fundo da tela */
-  right: 20px; /* Distância da direita da tela */
-  padding: 10px 20px; /* Espaçamento interno do botão */
-  background-color: #587ac5; /* Cor de fundo */
+  position: fixed;
+  bottom: 20px; 
+  right: 20px; 
+  padding: 10px 20px; 
+  background-color: #587ac5; 
   border: none;
-  border-radius: 5px; /* Bordas arredondadas */
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Sombra */
-  transition: background-color 0.3s; /* Transição suave para a cor de fundo */
+  border-radius: 5px; 
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out; /* Transição suave para a cor de fundo */
 }
 
 .fixed-button:hover {
-  background-color: #7d00b3; /* Cor de fundo ao passar o mouse */
+  background-color: #4d43df;
+  color: #fff; /* Cor de fundo ao passar o mouse */
 }
