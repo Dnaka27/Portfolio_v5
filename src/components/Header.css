@@ -5,9 +5,8 @@ header {
   flex-direction: column;
   text-align: center;
 }
-.navbar {
-  align-items: center;
-  padding: 2rem;
+#nav-style{
+  padding: 2%;
 }
 .navbar-nav {
   display: flex;

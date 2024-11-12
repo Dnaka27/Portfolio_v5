@@ -11,7 +11,7 @@ const Header = () => {
 
   return (
     <header className='header' id='menu'>
-      <nav className='navbar navbar-expand-lg navbar-dark'>
+      <nav className='navbar navbar-expand-lg navbar-dark' id='nav-style'>
         Welcome!
         <button
           className='navbar-toggler'
