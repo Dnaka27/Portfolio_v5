@@ -66,10 +66,10 @@ const Header = () => {
           <h1>&lt;Diogo Oike/&gt;</h1>
           <div className='my-functions'>
             <div className='data-engineer'>
-              <span>DATA ENGINEER</span> <i className='fa-brands fa-python'></i><i className='fa-solid fa-database'></i>
+              <span>DATA ENGINEER</span> <div className="function-icons"><i className='fa-brands fa-python'></i><i className='fa-solid fa-database'></i><i class="fa-solid fa-chart-simple"></i></div>
             </div>
             <div className='fullstack-developer'>
-              <span>FULLSTACK DEVELOPER</span> <i className='fa-brands fa-js'></i>
+              <span>FULLSTACK DEVELOPER</span> <div className="function-icons"><i class="fa-brands fa-node-js"></i><i class="fa-brands fa-react"></i></div>
             </div>
           </div>
         </div>
