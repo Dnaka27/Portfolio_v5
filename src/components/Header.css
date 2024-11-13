@@ -55,13 +55,23 @@ h1 {
   margin: 0;
 }
 
-.my-functions h3 {
+.data-engineer, .fullstack-developer {
   padding: 1.5%;
   font-size: 2.5rem;
   color: #ffffff;
-  display: inline-block;
-  border-bottom: 2px solid #3a3add;
-  border-left: 2px solid #3a3add;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.data-engineer {
+  border-bottom: 2px solid #2495ff;
+  border-left: 2px solid #2495ff;
+}
+
+.fullstack-developer {
+  border-bottom: 2px solid #9d00ff;
+  border-left: 2px solid #9d00ff;
 }
 
 .about-me h2 {

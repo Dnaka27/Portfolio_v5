@@ -65,8 +65,12 @@ const Header = () => {
         <div className='my-role'>
           <h1>&lt;Diogo Oike/&gt;</h1>
           <div className='my-functions'>
-            <h3>DATA ENGINEER</h3>
-            <h3>FULLSTACK DEVELOPER</h3>
+            <div className='data-engineer'>
+              <span>DATA ENGINEER</span> <i className='fa-brands fa-python'></i><i className='fa-solid fa-database'></i>
+            </div>
+            <div className='fullstack-developer'>
+              <span>FULLSTACK DEVELOPER</span> <i className='fa-brands fa-js'></i>
+            </div>
           </div>
         </div>
         <div className='about-me'>
@@ -79,8 +83,7 @@ const Header = () => {
             <span className='styleTech styleJS'>JavaScript</span>. I enjoy
             creating smart solutions while exploring the world of technology. I
             am a committed and creative person, always looking to{' '}
-            <span className='styleEnph'>learn</span>{' '}
-            something new.
+            <span className='styleEnph'>learn</span> something new.
           </p>
         </div>
       </div>
