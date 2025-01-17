@@ -1,0 +1,148 @@
+#projects {
+  height: 100vh;
+  box-sizing: border-box;
+}
+.projects-section {
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.project-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+/* Estilo carrossel para mobile */
+@media (max-width: 768px) {
+  .project-container {
+    display: flex;
+    overflow-x: auto;
+    gap: 1rem;
+    padding: 1rem;
+    scroll-snap-type: x mandatory;
+  }
+
+  .project-card {
+    min-width: 250px;
+    flex: 0 0 auto;
+    scroll-snap-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid #ffffff33;
+    color: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 2px 2px 8px #b6b6b6;
+  }
+
+  .project-container::-webkit-scrollbar {
+    display: none;
+  }
+  .project-container {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+/* Estilo do card */
+.project-card {
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+  padding: 2%;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid #ffffff33;
+  color: #fff;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 2px 2px 8px #b6b6b6;
+}
+
+/* Estilo da imagem do projeto */
+.project-image {
+  background-size: cover;
+  background-position: center;
+  height: 200px;
+  border-radius: 8px 8px 0 0;
+}
+
+/* Estilo das informações do projeto */
+.project-info {
+  padding: 1rem;
+}
+
+.project-title {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.project-description {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.project-link {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+.project-link:hover {
+  color: #0056b3;
+}
+
+.projectName {
+  color: rgb(0, 123, 255);
+}
+.projectName:hover {
+  color: #070f3b;
+}
+.styleTool {
+  padding: 0 0.5rem;
+  background-color: #5a899e;
+}
+.styleTech {
+  padding: 0 0.5rem;
+  border-radius: 5px;
+  color: white;
+}
+.styleHTML {
+  background-color: #ff6600;
+}
+.styleCSS {
+  background-color: #3ca0e7;
+}
+.styleCPP {
+  background-color: #7700ff;
+}
+.styleJV {
+  background-color: #ff0015;
+}
+.styleJS {
+  background-color: #cec028;
+}
+.stylePY {
+  background-color: #3c00ff;
+}
+.styleReact {
+  background-color: #00ddff;
+}
+.carousel-control-prev,
+.carousel-control-next {
+  width: 5%;
+}
+.carousel-indicators {
+  margin-bottom: 0;
+}
