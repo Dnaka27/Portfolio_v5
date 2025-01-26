@@ -65,10 +65,10 @@ const Header = () => {
         <div className='my-role'>
           <h1>Diogo Oike Kanefuku</h1>
           <div className='my-functions'>
-            <div className='data-engineer'>
+            <div className='main-role'>
               <span>DATA ENGINEER</span> <div className="function-icons"><i className='fa-brands fa-python'></i><i className='fa-solid fa-database'></i><i class="fa-solid fa-chart-simple"></i></div>
             </div>
-            <div className='fullstack-developer'>
+            <div className='secondary-role'>
               <span>BACKEND DEVELOPER</span> <div className="function-icons"><i class="fa-brands fa-node-js"></i><i class="fa-brands fa-react"></i></div>
             </div>
           </div>

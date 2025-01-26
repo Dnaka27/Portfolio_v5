@@ -62,6 +62,10 @@ ol {
   color: white;
 }
 
+#contact {
+  padding: 4% 5%;
+}
+
 /* Responsivity */
 
 @media (max-width: 767px) {
