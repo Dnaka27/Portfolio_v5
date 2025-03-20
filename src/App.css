@@ -48,7 +48,7 @@ ol {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  padding: 2% 5%;
+  padding: 1% 5%;
 }
 
 /* Títulos */
@@ -60,6 +60,10 @@ ol {
   margin: 0;
   padding: 1.5%;
   color: white;
+}
+
+#contact {
+  padding: 4% 5%;
 }
 
 /* Responsivity */

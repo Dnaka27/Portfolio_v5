@@ -1,9 +1,12 @@
 #EB {
+  height: 100vh;
   box-sizing: border-box;
 }
 .EBContent {
+  height: 70vh;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   padding: 2rem;
   gap: 2rem;
 }

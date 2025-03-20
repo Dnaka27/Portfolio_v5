@@ -63,13 +63,13 @@ const Header = () => {
       </nav>
       <div className='my-info'>
         <div className='my-role'>
-          <h1>&lt;Diogo Oike/&gt;</h1>
+          <h1>Diogo Oike Kanefuku</h1>
           <div className='my-functions'>
-            <div className='data-engineer'>
-              <span>DATA ENGINEER</span> <i className='fa-brands fa-python'></i><i className='fa-solid fa-database'></i>
+            <div className='main-role'>
+              <span>DATA ENGINEER</span> <div className="function-icons"><i className='fa-brands fa-python'></i><i className='fa-solid fa-database'></i><i class="fa-solid fa-chart-simple"></i></div>
             </div>
-            <div className='fullstack-developer'>
-              <span>FULLSTACK DEVELOPER</span> <i className='fa-brands fa-js'></i>
+            <div className='secondary-role'>
+              <span>BACKEND DEVELOPER</span> <div className="function-icons"><i class="fa-brands fa-node-js"></i><i class="fa-solid fa-bolt"></i></div>
             </div>
           </div>
         </div>

@@ -6,7 +6,7 @@ header {
   text-align: center;
 }
 #nav-style{
-  padding: 2%;
+  padding: 3% 3%;
 }
 .navbar-nav {
   display: flex;
@@ -32,8 +32,8 @@ header {
 }
 .my-role,
 .about-me {
-  padding: 1rem;
-  height: 75%;
+  padding: 0 1rem;
+  height: 90%;
   width: 50%;
 }
 .my-role {
@@ -55,7 +55,12 @@ h1 {
   margin: 0;
 }
 
-.data-engineer, .fullstack-developer {
+.function-icons{
+  display: flex;
+  gap: 1rem;
+}
+
+.main-role, .secondary-role {
   padding: 1.5%;
   font-size: 2.5rem;
   color: #ffffff;
@@ -64,12 +69,12 @@ h1 {
   justify-content: space-between;
 }
 
-.data-engineer {
+.main-role {
   border-bottom: 2px solid #2495ff;
   border-left: 2px solid #2495ff;
 }
 
-.fullstack-developer {
+.secondary-role {
   border-bottom: 2px solid #9d00ff;
   border-left: 2px solid #9d00ff;
 }
@@ -124,7 +129,7 @@ header .stylePY {
   position: fixed;
   bottom: 20px; 
   right: 20px; 
-  padding: 10px 20px; 
+  padding: 8px 16px; 
   background-color: #587ac5; 
   border: none;
   border-radius: 5px; 
