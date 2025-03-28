@@ -140,3 +140,91 @@ header .stylePY {
   background-color: #4d43df;
   color: #fff; /* Cor de fundo ao passar o mouse */
 }
+
+/* ...existing code... */
+
+/* Media Queries para Mobile */
+@media (max-width: 768px) {
+  header {
+    height: auto;
+    min-height: 100vh;
+  }
+
+  .my-info {
+    flex-direction: column;
+    height: 85vh;
+    padding: 1rem;
+    gap: 1rem;
+    margin: 0;
+  }
+
+  .my-role {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .my-role,
+  .about-me {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .main-role,
+  .secondary-role {
+    font-size: 1.5rem;
+    padding: 0.75rem;
+  }
+
+  .function-icons {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .about-me h2 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .about-text {
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
+
+  #nav-style {
+    padding: 1.5rem;
+  }
+
+  .fixed-button {
+    bottom: 10px;
+    right: 10px;
+    padding: 6px 12px;
+    font-size: 0.9rem;
+  }
+}
+
+/* Media Queries para dispositivos muito pequenos */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.75rem;
+  }
+
+  .main-role,
+  .secondary-role {
+    font-size: 1.25rem;
+  }
+
+  .about-me h2 {
+    font-size: 1.25rem;
+  }
+
+  .about-text {
+    font-size: 0.9rem;
+  }
+}
