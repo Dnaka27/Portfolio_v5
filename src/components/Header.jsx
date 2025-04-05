@@ -84,8 +84,7 @@ const Header = () => {
         </div>
         <div className='about-me'>
           <p className='about-text'>
-            Developer and Data Engineer
-            creating solutions with{' '}
+            Creating smart solutions with{' '}
             <span className='header-styleTech header-stylePY'>Python</span>,{' '}
             <span className='header-styleTech header-styleJV'>Java</span>, and{' '}
             <span className='header-styleTech header-styleJS'>JavaScript</span>. Always{' '}
