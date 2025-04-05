@@ -66,24 +66,30 @@ const Header = () => {
           <h1>Diogo Oike Kanefuku</h1>
           <div className='my-functions'>
             <div className='main-role'>
-              <span>DATA ENGINEER</span> <div className="function-icons"><i className='fa-brands fa-python'></i><i className='fa-solid fa-database'></i><i class="fa-solid fa-chart-simple"></i></div>
+              <span>DATA ENGINEER</span>{' '}
+              <div className='function-icons'>
+                <i className='fa-brands fa-python'></i>
+                <i className='fa-solid fa-database'></i>
+                <i class='fa-solid fa-chart-simple'></i>
+              </div>
             </div>
             <div className='secondary-role'>
-              <span>BACKEND DEVELOPER</span> <div className="function-icons"><i class="fa-brands fa-node-js"></i><i class="fa-solid fa-bolt"></i></div>
+              <span>BACKEND DEVELOPER</span>{' '}
+              <div className='function-icons'>
+                <i class='fa-brands fa-node-js'></i>
+                <i class='fa-solid fa-bolt'></i>
+              </div>
             </div>
           </div>
         </div>
         <div className='about-me'>
-          <h2>About me</h2>
           <p className='about-text'>
-            Nice to meet you, I'm Diogo! I'm a university student focused on
-            software development and data engineering, with my knowledge in{' '}
-            <span className='styleTech stylePY'>Python</span>,{' '}
-            <span className='styleTech styleJV'>Java</span>, and{' '}
-            <span className='styleTech styleJS'>JavaScript</span>. I enjoy
-            creating smart solutions while exploring the world of technology. I
-            am a committed and creative person, always looking to{' '}
-            <span className='styleEnph'>learn</span> something new.
+            Developer and Data Engineer
+            creating solutions with{' '}
+            <span className='header-styleTech header-stylePY'>Python</span>,{' '}
+            <span className='header-styleTech header-styleJV'>Java</span>, and{' '}
+            <span className='header-styleTech header-styleJS'>JavaScript</span>. Always{' '}
+            <span className='styleEnph'>learning</span> and evolving.
           </p>
         </div>
       </div>
