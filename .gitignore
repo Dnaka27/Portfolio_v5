@@ -7,18 +7,34 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
-*.local
+# Dependency directories
+node_modules/
 
-# Editor directories and files
-.vscode/*
-!.vscode/extensions.json
-.idea
+# Production build
+dist/
+
+# Vite cache
+.vite/
+
+# Local env files
+.env.local
+.env.*.local
+
+# VS Code settings
+.vscode/
+
+# Mac system files
 .DS_Store
+
+# Optional: ignore coverage output
+coverage/
+
+# Optional: ignore IDE config
+.idea/
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
-*.sw?
+
+# Optional: ignore TypeScript build files
+*.tsbuildinfo

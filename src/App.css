@@ -35,7 +35,7 @@ ol {
 .skillIcon:hover,
 .contactIcon:hover {
   transform: translateY(-5px);
-  box-shadow: 2px 2px 12px rgba(182, 182, 182, 0.5);
+  box-shadow: 2px 2px 12px #b6b6b680;
 }
 
 /* Layout Principal */
@@ -72,13 +72,16 @@ ol {
   body {
     font-size: 1.125rem;
   }
+
   .navbar-toggler {
     padding: 1.5%;
   }
+
   .navbar {
     font-size: 1.25rem;
     padding: 2.5% 5%;
   }
+
   .navbar-nav {
     display: flex;
     flex-direction: row;
@@ -86,82 +89,102 @@ ol {
     margin-right: auto;
     padding: 1%;
   }
+
   .nav-link {
     padding: 4%;
   }
+
   h1 {
     font-size: 7.5vw;
   }
+
   .headerSub {
     height: 60%;
     flex-direction: column;
     display: flex;
     justify-content: space-around;
   }
+
   .aboutRow {
     display: flex;
     flex-direction: column;
   }
+
   .devFunctionCol {
     display: flex;
   }
+
   .devFunction {
     font-size: 3.5rem;
     margin: auto;
   }
+
   .aboutCol {
     display: flex;
     align-items: center;
   }
+
   .aboutText,
   .textDescription {
     font-size: 1rem;
   }
+
   .sectionMain {
     padding: 4%;
   }
+
   .titleSection {
     display: flex;
     font-size: 1.75rem;
   }
+
   .carousel {
     border-radius: 0.5rem;
     margin-top: 5%;
     padding: 2% 0;
   }
+
   .carouselProjects {
     height: 70vh;
     margin: 0;
     flex-direction: column;
     padding: 2% 7.5%;
   }
+
   .carouselImageCol,
   .carouselDescriptionCol {
     margin: 2% 0;
   }
+
   .titleProjectDescription,
   .textDescription {
     text-align: justify;
     margin: 1% 0;
     padding: 2%;
   }
+
   #skills .row {
     display: flex;
     flex-direction: column;
   }
+
   .softSkills,
   .hardSkills {
     margin: 4% 0;
   }
+
   .skillBlock h4 {
     margin-bottom: 5%;
   }
+
   .EBOptions h3 {
     font-size: 1.2rem;
   }
+
   .EBCertifiesList {
     padding: 0;
   }
+
   .EBCols {
     height: 40vh;
     flex-direction: column;
@@ -169,27 +192,33 @@ ol {
     align-items: center;
     flex-basis: 100%;
   }
+
   .EBColActive {
     max-height: 100%;
     animation: showActive 0.9s forwards;
   }
+
   .EBColOff {
     animation: showOff 0.4s forwards;
   }
+
   .sectionFooter {
     padding: 0 6% 2% 6%;
     display: flex;
     align-items: center;
   }
+
   .footer-content {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
   }
+
   footer .titleSection {
     margin: 0;
   }
+
   .contactIcon {
     color: #517bd6;
     display: flex;
@@ -198,9 +227,11 @@ ol {
     padding: 25%;
     border-radius: 0.5rem;
   }
+
   .contactIcon:hover {
     color: #0084ff;
   }
+
   .arrow-up i {
     font-size: 5vw;
   }
@@ -211,13 +242,16 @@ ol {
   body {
     font-size: 1.125rem;
   }
+
   .navbar-toggler {
     padding: 1.5%;
   }
+
   .navbar {
     font-size: 1.25rem;
     padding: 5%;
   }
+
   .navbar-nav {
     display: flex;
     flex-direction: row;
@@ -225,65 +259,81 @@ ol {
     margin-right: auto;
     padding: 2%;
   }
+
   .headerSub {
     height: 60%;
   }
+
   .devFunctionCol {
     display: flex;
   }
+
   .devFunction {
     font-size: 3.5rem;
     margin: auto;
   }
+
   .aboutText,
   .textDescription {
     font-size: 1rem;
   }
+
   .sectionMain {
     padding: 4%;
   }
+
   .titleSection {
     display: flex;
     font-size: 1.75rem;
   }
+
   .carousel {
     border-radius: 0.5rem;
     margin-top: 5%;
     padding: 2% 0;
   }
+
   .carouselProjects {
     height: 70vh;
     margin: 0;
     flex-direction: column;
     padding: 2% 7.5%;
   }
+
   .carouselImageCol,
   .carouselDescriptionCol {
     margin: 2% 0;
   }
+
   .titleProjectDescription,
   .textDescription {
     text-align: justify;
     margin: 1% 0;
     padding: 2%;
   }
+
   #skills .row {
     display: flex;
     flex-direction: column;
   }
+
   .softSkills,
   .hardSkills {
     margin: 4% 0;
   }
+
   .skillBlock h4 {
     margin-bottom: 5%;
   }
+
   .EBOptions h3 {
     font-size: 1.2rem;
   }
+
   .EBCertifiesList {
     padding: 0;
   }
+
   .EBCols {
     height: 50vh;
     flex-direction: column;
@@ -291,18 +341,22 @@ ol {
     align-items: center;
     flex-basis: 100%;
   }
+
   .EBColActive {
     max-height: 100%;
     animation: showActive 0.9s forwards;
   }
+
   .EBColOff {
     animation: showOff 0.4s forwards;
   }
+
   .sectionFooter {
     padding: 0 6% 2% 6%;
     display: flex;
     align-items: center;
   }
+
   .contactIcon {
     color: #517bd6;
     display: inline-block;
@@ -311,12 +365,15 @@ ol {
     padding: 3%;
     border-radius: 0.5rem;
   }
+
   .contactIcon:hover {
     color: #0084ff;
   }
+
   footer .titleSection {
     margin-right: 10%;
   }
+
   .arrow-up i {
     font-size: 5vw;
   }
@@ -325,12 +382,13 @@ ol {
 /* Animations */
 
 @keyframes boxShadowDark {
-	from {
-		box-shadow: none;
-	}
-	to {
-		box-shadow: 2px 2px 8px #3b3b3b;
-	}
+  from {
+    box-shadow: none;
+  }
+
+  to {
+    box-shadow: 2px 2px 8px #3b3b3b;
+  }
 }
 
 @keyframes showActive {
@@ -338,20 +396,24 @@ ol {
     display: none;
     opacity: 0;
   }
+
   50% {
     display: none;
     opacity: 0;
   }
+
   100% {
     display: flex;
     opacity: 1;
   }
 }
+
 @keyframes showOff {
   from {
     display: flex;
     opacity: 1;
   }
+
   to {
     display: none;
     opacity: 0;

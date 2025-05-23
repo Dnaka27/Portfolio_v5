@@ -146,3 +146,97 @@
 .carousel-indicators {
   margin-bottom: 0;
 }
+
+/* ...existing code... */
+
+/* Media Queries para Mobile */
+@media (max-width: 768px) {
+  #projects {
+    height: auto;
+    min-height: 100vh;
+    padding: 2rem 1rem;
+  }
+
+  .project-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1rem 0;
+  }
+
+  .project-card {
+    width: 100%;
+    min-width: auto;
+    margin: 0 auto;
+  }
+
+  .project-image {
+    height: 180px;
+  }
+
+  .project-info {
+    padding: 0.75rem;
+  }
+
+  .project-title {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .project-description {
+    font-size: 0.9rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .project-link {
+    font-size: 1.25rem;
+  }
+
+  .styleTool, 
+  .styleTech {
+    padding: 0 0.25rem;
+    font-size: 0.9rem;
+  }
+}
+
+/* Media Queries para tablets */
+@media (min-width: 769px) and (max-width: 1024px) {
+  #projects {
+    height: auto;
+    min-height: 100vh;
+  }
+
+  .project-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    padding: 1rem;
+  }
+
+  .project-card {
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+
+/* Media Queries para dispositivos muito pequenos */
+@media (max-width: 480px) {
+  .project-container {
+    padding: 0.5rem;
+  }
+
+  .project-image {
+    height: 150px;
+  }
+
+  .project-title {
+    font-size: 1rem;
+  }
+
+  .project-description {
+    font-size: 0.85rem;
+  }
+
+  .project-link {
+    font-size: 1.1rem;
+  }
+}

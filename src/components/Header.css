@@ -5,8 +5,8 @@ header {
   flex-direction: column;
   text-align: center;
 }
-#nav-style{
-  padding: 3% 3%;
+#nav-style {
+  padding: 2% 3%;
 }
 .navbar-nav {
   display: flex;
@@ -20,32 +20,39 @@ header {
 .navbar-brand:hover,
 .nav-link:hover {
   background-color: #77777777;
+  transform: translateY(-5px);
+  transition: transform 0.25s ease-in-out, box-shadow 0.25s ease-in-out;
 }
 .my-info {
   padding: 0% 3%;
   display: flex;
   justify-content: space-between;
-  gap: 2rem;
   align-items: center;
   height: 100%;
   margin: auto;
 }
-.my-role,
-.about-me {
-  padding: 0 1rem;
+.my-role {
+  padding: 0 3rem;
   height: 90%;
   width: 50%;
-}
-.my-role {
+  padding: 0 1rem;
   text-align: left;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 }
+
+.about-me {
+  display: flex;
+  width: 45%;
+  justify-content: center;
+  align-items: center;
+  background-color: #2495ff; 
+}
+
 h1 {
   text-align: center;
   font-size: 3.5rem;
-  font-weight: bold;
 }
 
 .my-functions {
@@ -55,12 +62,13 @@ h1 {
   margin: 0;
 }
 
-.function-icons{
+.function-icons {
   display: flex;
   gap: 1rem;
 }
 
-.main-role, .secondary-role {
+.main-role,
+.secondary-role {
   padding: 1.5%;
   font-size: 2.5rem;
   color: #ffffff;
@@ -79,64 +87,146 @@ h1 {
   border-left: 2px solid #9d00ff;
 }
 
-.about-me h2 {
-  font-size: 2rem;
-}
-
 .about-me {
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
+  align-items: center;
+  background-color: #1f1f1f;
+  border: 8px outset #09090a;
+  box-shadow: 6px 6px 15px #27004e;
 }
 
 .about-text {
-  text-align: justify;
-  margin: 0;
-}
-
-header .styleTech{
-  font-weight: bold;
-}
-
-header .styleJV {
-  background-color: #ff0015;
-}
-
-header .styleJS {
-  background-color: #ddad00;
-}
-
-header .stylePY {
-  background-color: #4800ff;
-}
-
-.styleEnph,
-.styleTech {
-  padding: 0 1%;
-  border-radius: 0.25rem;
+  font-family: 'Playfair Display', serif;
   color: white;
+  justify-content: center;
+  padding: 1rem;
+  margin-left: 1rem;
+  font-size: 2.5rem;
+  text-align: left;
+  margin: 0;
+  font-weight: 100;
+  padding-left: 2.5rem;
+}
+
+.header-stylePY {
+  border-bottom: 2px solid #4800ff;
+}
+
+.header-styleJV {
+  border-bottom: 2px solid #ff0015;
+}
+
+.header-styleJS {
+  border-bottom: 2px solid #ffc800;
 }
 
 .styleEnph {
-  background-color: #fff;
-  font-weight: bold;
-  color: black;
+  border-bottom: 2px solid white;
 }
 
 /* Botão fixo */
 
 .fixed-button {
   position: fixed;
-  bottom: 20px; 
-  right: 20px; 
-  padding: 8px 16px; 
-  background-color: #587ac5; 
+  bottom: 20px;
+  right: 20px;
+  padding: 8px 16px;
+  background-color: #587ac5;
   border: none;
-  border-radius: 5px; 
+  border-radius: 5px;
   transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out; /* Transição suave para a cor de fundo */
 }
 
 .fixed-button:hover {
   background-color: #4d43df;
   color: #fff; /* Cor de fundo ao passar o mouse */
+}
+
+/* ...existing code... */
+
+/* Media Queries para Mobile */
+@media (max-width: 768px) {
+  header {
+    height: auto;
+    min-height: 100vh;
+  }
+
+  .my-info {
+    flex-direction: column;
+    height: 85vh;
+    padding: 1rem;
+    gap: 1rem;
+    margin: 0;
+  }
+
+  .my-role {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .my-role,
+  .about-me {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .main-role,
+  .secondary-role {
+    font-size: 1.5rem;
+    padding: 0.75rem;
+  }
+
+  .function-icons {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .about-me h2 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .about-text {
+    font-size: 2rem;
+    padding: 0.5rem;
+  }
+
+  #nav-style {
+    padding: 1.5rem;
+  }
+
+  .fixed-button {
+    bottom: 10px;
+    right: 10px;
+    padding: 6px 12px;
+    font-size: 0.9rem;
+  }
+}
+
+/* Media Queries para dispositivos muito pequenos */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.75rem;
+  }
+
+  .main-role,
+  .secondary-role {
+    font-size: 1.25rem;
+  }
+
+  .about-me h2 {
+    font-size: 1.25rem;
+  }
+
+  .about-text {
+    font-size: 1.75rem;
+  }
 }
